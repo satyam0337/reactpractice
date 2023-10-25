@@ -2,7 +2,6 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Post from "./Post";
 import { Link } from "react-router-dom";
-
 const Get = () => {
   const [Data, setData] = useState("");
 

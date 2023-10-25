@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-
+import withGA4Tracking from "../GA4/withGA4Tracking";
 const Post = () => {
 
 // form data collecting 
