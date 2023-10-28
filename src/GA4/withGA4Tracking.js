@@ -1,5 +1,6 @@
 import { ReactGAImplementation} from "react-ga4";
 import { useEffect } from "react";
+
 const withGA4Tracking = (WrappedComponent) => {
 
 

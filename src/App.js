@@ -6,8 +6,9 @@ import Allroutes from "./crud/Allroutes";
 import Counter from "./smallApp/Counter";
 import Navbar from "./crud/Navbar";
 import ReactGA from "react-ga4"
+
 function App() {
-  ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+
   return (
     <div className="App">
 

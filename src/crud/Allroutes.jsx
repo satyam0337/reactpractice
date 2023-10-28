@@ -1,11 +1,18 @@
-import React from 'react'
+import {React, useEffect } from 'react'
 import { Route ,Routes} from 'react-router-dom'
 import SinglePage from "./SinglePage"
 import Get from './Get'
 import Delete from './Delete'
 import Counter from "../smallApp/Counter"
 import Post from './Post'
+import ReactGA from 'react-ga'
 const Allroutes = () => {
+
+  useEffect(() => {
+    ReactGA.initialize('G-GNKR5KPJHR');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
+
   return (
     <div>
         <Routes>
